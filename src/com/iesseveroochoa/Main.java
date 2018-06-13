@@ -2,23 +2,26 @@ package com.iesseveroochoa;
 
 import jdk.nashorn.internal.objects.NativeArray;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    List<Personaje> reparto = null;
+    static List<Personaje> reparto = new ArrayList<Personaje>();
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         //Incorporación de los personajes a la obra.
         incorporarAlReparto();
         //Desarrollo de la trama.
         //Todos los pretendientes están en casa de Odiseo. Junto con Telémaco y Penelopea.
         ubicaciónIncial();
         //
+        //Comienzan los viajeros
+        viajeros();
 
 
     }
 
-    void incorporarAlReparto() {
+    static void incorporarAlReparto() {
         reparto.add(new Personaje("Odiseo", "héroe"));
         reparto.add(new Personaje("Penelepe", "esposa"));
         reparto.add(new Personaje("Telémaco", "heredero"));
