@@ -26,6 +26,8 @@ public class Main {
         reparto.add(new Personaje("Leodes", "pretendiente"));
         reparto.add(new Personaje("Eurimaco", "pretendiente"));
         reparto.add(new Personaje("Nestor","rey"));
+        reparto.add(new Personaje("Polifero", "cíclope"));
+        reparto.add(new Personaje("Elpéonor", "torpe"));
     }
 
     void ubicaciónIncial(){
