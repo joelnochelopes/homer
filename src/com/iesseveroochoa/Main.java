@@ -40,12 +40,19 @@ public class Main {
             if (reparto.get(i).getNombre().equals("Odiseo")) {
                 reparto.get(i).setLocalizacion("Troya"); //Odiseo está en Troya.
             }
-            if (reparto.get(i).getNombre().equals("Polifemo")) {
+            if (reparto.get(i).getNombre().equals("Polifero")) {
                 reparto.get(i).setLocalizacion("tierras de los cíclopes");
             }
             if (reparto.get(i).getNombre().equals("Elpéonor")) {
                 reparto.get(i).setLocalizacion("isla Eolia");
             }
+        }
+    }
+
+    static void viajeros() {
+        for (int i = 0; i < reparto.size(); i++) {
+            System.out.print("El personaje " + reparto.get(i).getNombre());
+            System.out.println(" viaja hasta " + reparto.get(i).getLocalizacion());
         }
     }
 }
