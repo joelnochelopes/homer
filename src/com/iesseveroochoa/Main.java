@@ -37,4 +37,12 @@ public class Main {
             }
         }
     }
+
+    void viajeros() {
+        for (int i = 0; i < reparto.size(); i++) {
+            System.out.print("El personaje " + reparto.get(i).getNombre());
+            System.out.println(" viaja hasta " + reparto.get(i).getLocalizacion());
+        }
+    }
+
 }
