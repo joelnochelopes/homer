@@ -14,6 +14,8 @@ public class Main {
         //Todos los pretendientes están en casa de Odiseo. Junto con Telémaco y Penelopea.
         ubicaciónIncial();
         //
+        //Comienzan los viajeros
+        viajeros();
 
 
     }
