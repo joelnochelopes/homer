@@ -25,22 +25,15 @@ public class Main {
         reparto.add(new Personaje("Antínoo", "pretendiente"));
         reparto.add(new Personaje("Leodes", "pretendiente"));
         reparto.add(new Personaje("Eurimaco", "pretendiente"));
-        reparto.add(new Personaje("Nestor", "rey"));
-        reparto.add(new Personaje("Polifero", "cíclope"));
-        reparto.add(new Personaje("Elpéonor", "torpe"));
+        reparto.add(new Personaje("Nestor","rey"));
     }
 
-    void ubicaciónIncial() {
+    static void ubicaciónIncial(){
         for (int i = 0; i < reparto.size(); i++) {
-            reparto.get(i).setLocalizacion("casa Odiseo");
             if (reparto.get(i).getNombre().equals("Odiseo")) {
                 reparto.get(i).setLocalizacion("Troya"); //Odiseo está en Troya.
-            }
-            if (reparto.get(i).getNombre().equals("Polifemo")) {
-                reparto.get(i).setLocalizacion("tierras de los cíclopes");
-            }
-            if (reparto.get(i).getNombre().equals("Elpéonor")) {
-                reparto.get(i).setLocalizacion("isla Eolia");
+            } else {
+                reparto.get(i).setLocalizacion("casa Odiseo");
             }
         }
     }
